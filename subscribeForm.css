@@ -1,69 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
 
 * {
-    font-family: 'Preahvihear', sans-serif;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
+    font-family: 'Preahvihear', sans-serif;
     box-sizing: border-box;
-}
-
-/* root values */
-:root {
-    --container-color: #1a1e21;
-    --text-color: #172317;
-    --bg-color: #fff;
-}
-
-::selection {
-    color: var(--bg-color);
-    background: var(--second-color);
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-img {
-    width: 100%;
-}
-
-section {
-    padding: 3rem 0 2rem;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.share {
-    margin-bottom: 20px; /* Add some bottom margin to separate the text and icons */
-}
-
-
-
-.container {
-    max-width: 1800px;
-    margin: auto;
-    width: 100%;
-}
-
-.containerHead {
-    max-width: 1500px;
-    margin: auto;
-    width: 100%;
-}
-
-a {
-    color: #fff;
 }
 
 /* Header */
@@ -76,6 +17,7 @@ a {
 
 header {
     position: fixed;
+    display: inline-block;
     top: 0;
     left: 0;
     width: 100%;
@@ -96,9 +38,6 @@ header.shadow .logo {
     color: var(--text-color);
 }
 
-.active-link{
-    color: chocolate;
-}
 .nav {
     display: flex;
     align-items: center;
@@ -110,6 +49,8 @@ header.shadow .logo {
     display: inline-flex;
     gap: 50px;
     align-items: center;
+
+    /* Adjust the gap as needed */
 }
 
 .nav-links a {
@@ -124,6 +65,8 @@ header.shadow .logo {
     color: chocolate;
     /* Change the color on hover as needed */
 }
+
+/* Add this to your CSS file */
 
 /* Dropdown container */
 .dropdown {
@@ -169,11 +112,14 @@ header.shadow .logo {
     display: block;
 }
 
+
+
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: #111;
-    padding-left: 150px;
+    padding-left: 200px;
+    text-decoration: none;
 }
 
 
@@ -186,7 +132,7 @@ header.shadow .logo {
     color: #333;
     text-decoration: none;
     transition: 0.5s;
-    margin-right: 9.4rem;
+    margin-right: 12.5rem;
 }
 
 .subscribe:hover {
@@ -196,154 +142,11 @@ header.shadow .logo {
     transition: .5s;
 }
 
-
-
-.about {
-    position: relative;
-    width: 100%;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
-.about .contentBx {
-    max-width: 50%;
-    width: 50%;
-    text-align: left;
-    padding-right: 40px;
-}
-
-.titleText {
-    font-weight: bold;
-    color: #111;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-
-
-.btn2 {
-    position: relative;
-    display: inline-block;
-    margin-top: 30px;
-    padding: 10px 30px;
-    background: #fff;
-    border: .8px solid #111;
-    color: #333;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-.btn2:hover {
-    background-color: chocolate;
-    border: none;
-    color: #fff;
-}
-
-.post-filter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1.5rem;
-    margin-top: 2rem !important;
-}
-
-.filter-item {
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.active-filter {
-    background: chocolate;
-    color: var(--bg-color);
-    padding: 4px 10px;
-    border-radius: 5px;
-}
-
-.post {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-.post-box {
-    background: var(--bg-color);
-    box-shadow: 0 4px 14px hsl(35deg 25% 15% / 10%);
-    padding: 15px;
-    border-radius: 0.5rem;
-}
-
-.post-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 0.5rem;
-}
-
-.category {
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: var(--second-color);
-}
-
-.post-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--text-color);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.post-date {
-    display: flex;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    margin-top: 4px;
-    font-weight: 400;
-}
-
-.post-description {
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    margin: 5px 0 10px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.profile-img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-    border: 2px solid var(--second-color);
-}
-
-.profile-name {
-    font-size: .8rem;
-    font-weight: 500;
-}
-
 footer {
     position: relative;
     width: 100%;
     height: auto;
     padding: 50px 100px;
-    margin-top: 3rem;
     background: #111;
     display: flex;
     font-family: sans-serif;
@@ -361,9 +164,13 @@ footer {
     margin-right: 30px;
 }
 
+
 .footer-container .sec.aboutus {
     width: 40%;
+    text-align: justify;
+    /* Add this line to justify the text */
 }
+
 
 p a {
     color: chocolate;
@@ -412,6 +219,14 @@ footer p {
     transition: .5s;
 }
 
+.sci li a i {
+    color: #fff;
+    /* Add this line to make the icons white */
+}
+
+
+
+
 .sci li a:hover {
     background: chocolate;
 }
@@ -421,37 +236,6 @@ footer p {
     font-size: 20px;
 }
 
-.share-icon{
-    margin: 20px;
-    display: flex;
-    align-items: center;
-}
-.share-icons li {
-    list-style: none;
-}
-
-.share-icon li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: .5s;
-}
-
-.share-icon li a:hover {
-    background: chocolate;
-}
-
-.share-icon i a .bx {
-    color: #fff;
-    font-size: 20px;
-}
 .quicklinks {
     position: relative;
     width: 25%;
@@ -470,7 +254,7 @@ footer p {
 }
 
 .quicklinks ul li a:hover {
-    color: #fff;
+    color: chocolate;
 }
 
 .footer-container .contactBx {
@@ -537,34 +321,69 @@ footer p {
     background-color: chocolate;
 }
 
-.active-link {
-    color: chocolate !important; /* Add !important to override other styles */
-}
-p {
-    text-align: justify;
+
+.hero {
+    height: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(images/SantaMariaWelcomeArch.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10px;
+    color: #fff;
 }
 
-.title-text {
-    text-align: justify;
-}
-
-.share {
+.hero h2 {
+    margin-top: 15%;
+    font-weight: 400;
+    font-size: 30px;
+    align-items: center;
     text-align: center;
 }
 
-.share p {
-    display: inline-block;
+.hero h1 {
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
 }
 
-@media (max-width: 1060px) {
-    .container {
-        margin: 0 auto;
-        width: 95%;
-    }
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0 50px;
+    text-align: center;
+}
 
-    .home-text {
-        width: 100%
-    }
+form {
+    background: #fff;
+    display: flex;
+    width: fit-content;
+    margin-left: 45rem;
+    /* Adjusted to push the form to the right */
+    margin-bottom: 1rem;
+}
+
+form input {
+    border: 0;
+    padding: 10px 20px;
+    height: 70px;
+    width: 400px;
+    /* Adjusted width for better visual balance */
+    font-size: 16px;
+}
+
+form button {
+    width: 5rem;
+    background: chocolate;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+    /* Add margin for spacing between input and button */
+}
+
+.thank-you {
+    color: chocolate;
+    margin-left: 45rem;
 }
 
 @media (max-width: 768px) {
@@ -646,40 +465,6 @@ p {
     }
 }
 
-@media (max-width: 396px) {
-    .home-title {
-        font-size: 2rem;
-    }
-
-    .home-subtitle {
-        font-size: 0.9rem;
-    }
-
-    .home {
-        min-height: 300px;
-    }
-
-    .post-box {
-        padding: 10px;
-    }
-
-    .header-title {
-        font-size: 1.4rem;
-    }
-
-    .header-img {
-        height: 240px;
-    }
-
-    .post-header {
-        height: 335px;
-    }
-
-    .header-img {
-        height: 340px;
-    }
-}
-
 /* Footer Media Query */
 @media (max-width: 991px) {
     footer {
@@ -707,4 +492,9 @@ p {
     footer .footer-container .contactBx {
         width: 100%;
     }
+}
+
+.active-link {
+    color: chocolate !important;
+    /* Add !important to override other styles */
 }

@@ -400,6 +400,8 @@ footer {
 
 .footer-container .sec.aboutus {
     width: 40%;
+    text-align: justify;
+    /* Add this line to justify the text */
 }
 
 p a {
