@@ -49,6 +49,7 @@ header.shadow .logo {
     display: inline-flex;
     gap: 50px;
     align-items: center;
+    padding-left: 2rem;
 
     /* Adjust the gap as needed */
 }

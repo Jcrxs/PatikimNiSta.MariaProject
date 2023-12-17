@@ -76,14 +76,16 @@ a {
 
 header {
     position: fixed;
+    display: inline-block;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 200;
-    background: var(--bg-color);
+    background: var(--text-color);
     /* Set the background color using the custom property */
     box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
     transition: .5s;
+    padding-left: 12.5rem;
 }
 
 header.shadow {
@@ -99,31 +101,35 @@ header.shadow .logo {
 .active-link{
     color: chocolate;
 }
-.nav {
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 18px 0;
-}
-
-.nav-links {
+    padding-right: 3.1rem;
+    }
+    
+    .nav-links {
     display: inline-flex;
     gap: 50px;
     align-items: center;
-}
-
-.nav-links a {
+    
+    }
+    
+    .nav-links a {
     text-decoration: none;
-    color: #111;
+    color: white;
     font-size: 1.1rem;
     font-weight: 500;
     transition: color 0.3s;
-}
-
-.nav-links a:hover {
+    }
+    
+    
+    
+    .nav-links a:hover {
     color: chocolate;
     /* Change the color on hover as needed */
-}
+    }
 
 /* Dropdown container */
 .dropdown {
@@ -172,8 +178,8 @@ header.shadow .logo {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #111;
-    padding-left: 150px;
+    color: var(--bg-color);
+    padding-left: 510;
 }
 
 
