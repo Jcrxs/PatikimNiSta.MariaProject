@@ -49,4 +49,21 @@ $(document).ready(function () {
     });
 });
 
+//logo when scrolling
+document.addEventListener("DOMContentLoaded", function() {
+    var header = document.getElementById("headerContainer");
+    var logo = document.getElementById("logoImage");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 0) {
+            // Add a class to switch to the white logo when scrolling
+            logo.classList.add("scroll-logo");
+        } else {
+            // Remove the class when at the top of the page
+            logo.classList.remove("scroll-logo");
+        }
+    });
+});
+
+
 

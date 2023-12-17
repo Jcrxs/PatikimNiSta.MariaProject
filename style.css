@@ -26,7 +26,7 @@ a {
     color: white;
 }
 
-p{
+p {
     justify-content: justify;
 }
 
@@ -46,15 +46,13 @@ section {
     max-width: 1500px;
     margin: auto;
     width: 100%;
+    height: 100%;
 }
-
 
 /* Header */
 :root {
     --bg-color: #fff;
-    /* Set your desired background color */
     --text-color: #000;
-    /* Set your desired text color */
 }
 
 header {
@@ -65,21 +63,22 @@ header {
     width: 100%;
     z-index: 200;
     background: var(--text-color);
-    /* Set the background color using the custom property */
     box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
     transition: .5s;
+    height: 85px;
+    background-color: rgb(0, 0, 0);
 }
+
 
 header.shadow {
     background: var(--bg-color);
-    box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+    box-shadow: 0 4px 7px hsl(0 6% 17% / 13%);
     transition: .5s;
 }
 
 header.shadow .logo {
     color: var(--text-color);
 }
-
 
 .nav {
     display: flex;
@@ -89,10 +88,10 @@ header.shadow .logo {
 }
 
 .nav-links {
-    display: inline-flex;
+    display: flex;
     gap: 50px;
     align-items: center;
-    
+
 }
 
 .nav-links a {
@@ -103,21 +102,16 @@ header.shadow .logo {
     transition: color 0.3s;
 }
 
-
-
 .nav-links a:hover {
     color: chocolate;
-    /* Change the color on hover as needed */
 }
-
-/* Add this to your CSS file */
 
 /* Dropdown container */
 .dropdown {
     display: inline-block;
 }
 
-/* Dropdown button styling */
+/* Dropdown button */
 .dropbtn {
     font-size: 16px;
     border: none;
@@ -138,7 +132,7 @@ header.shadow .logo {
     z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* content inside the dropdown (barrangay) */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -146,17 +140,19 @@ header.shadow .logo {
     display: block;
 }
 
-/* Change color on hover */
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
 
-/* Show the dropdown on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-
+.logoimg {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
 
 .logo {
     font-size: 1.5rem;
@@ -164,7 +160,6 @@ header.shadow .logo {
     color: var(--bg-color);
     padding-left: 510;
 }
-
 
 .subscribe {
     position: relative;
@@ -185,20 +180,18 @@ header.shadow .logo {
     transition: .5s;
 }
 
-
 .latestText {
     padding-left: 50rem;
 }
 
-.discover{
+.discover {
     padding-left: 1rem;
 }
 
-.bullet-list li{
-    list-style-type:circle; /* You can use 'disc', 'circle', or 'square' for different bullet styles */
-    margin-left: 50px; /* Adjust the left margin as needed */
+.bullet-list li {
+    list-style-type: circle;
+    margin-left: 50px;
 }
-
 
 .about {
     position: relative;
@@ -209,8 +202,8 @@ header.shadow .logo {
 }
 
 .aboutus p {
-      text-align: justify;
-    }
+    text-align: justify;
+}
 
 .about .contentBx {
     max-width: 50%;
@@ -234,11 +227,13 @@ header.shadow .logo {
     width: 50%;
     min-height: 500px;
 }
-
+.share{
+    text-align: center;
+}
 .fitBg {
     border-radius: 1rem;
     margin-top: 100px;
-    
+
 }
 
 .btn2 {
@@ -311,13 +306,6 @@ header.shadow .logo {
     color: chocolate;
 }
 
-
-.category {
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: var(--second-color);
-}
 
 .post-title {
     font-size: 1.3rem;
@@ -535,6 +523,15 @@ footer p {
     background-color: chocolate;
 }
 
+.scroll-logo {
+    content: url('images/logooo.png');
+}
+
+.active-link {
+    color: chocolate !important;
+    /* Add !important to override other styles */
+}
+
 
 @media (max-width: 1060px) {
     .container {
@@ -688,8 +685,3 @@ footer p {
         width: 100%;
     }
 }
-
-.active-link {
-    color: chocolate !important; /* Add !important to override other styles */
-}
-
