@@ -259,9 +259,10 @@ header.shadow .logo {
     justify-content: center;
     align-items: center;
     column-gap: 1.5rem;
-    margin-top: 2rem !important;
+    margin-top: 5rem;
     padding-bottom: 30px;
 }
+
 
 .filter-item {
     font-size: 1rem;
